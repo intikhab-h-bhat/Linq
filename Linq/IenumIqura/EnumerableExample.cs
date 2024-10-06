@@ -21,7 +21,7 @@ namespace Linq.IenumIqura
             IEnumerable<Student> students1 = students;
 
             //var students2 = students1.Where(s => s.Gender == "Male").ToList();
-            var students2 = from stu in students1 where stu.Gender == "Male" select stu;
+            var students2 = from stu in students1 where stu.Gender == "Female" select stu;
             
             if (students2.Count() > 0)
             {

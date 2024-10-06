@@ -29,3 +29,6 @@ using Linq.IenumIqura;
 
 EnumerableExample enumerableExample = new EnumerableExample();
 enumerableExample.EnumerableMethod();
+
+QurableExample qurableExample = new QurableExample();
+qurableExample.Example();
