@@ -1,12 +1,18 @@
 ﻿
+using Linq.DistinctDemo;
 using Linq.IenumIqura;
 using Linq.Select_SelectMany;
 using Linq.WhereFilter;
 
 
 
-WherFilter wherFilter = new WherFilter();
-wherFilter.WhereFilterDemo();
+
+DistinctDemo distinctDemo = new DistinctDemo();
+//distinctDemo.DistinctTest();
+distinctDemo.IntDistinctDemo();
+
+//WherFilter wherFilter = new WherFilter();
+//wherFilter.WhereFilterDemo();
 
 
 //Select_SelectMany selectDemo=new Select_SelectMany();
