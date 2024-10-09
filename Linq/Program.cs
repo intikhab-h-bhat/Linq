@@ -1,5 +1,20 @@
 ﻿
 using Linq.IenumIqura;
+using Linq.Select_SelectMany;
+
+
+
+Select_SelectMany selectDemo=new Select_SelectMany();
+//selectDemo.SelectMultipleProperties();
+selectDemo.SelectAnonymousObj();
+
+//selectDemo.SelectMethod();
+
+//selectDemo.SelectSingleProperty();
+
+
+
+
 ////using System.Linq;
 
 ////int[] age = new int[6]
@@ -27,8 +42,8 @@ using Linq.IenumIqura;
 
 
 
-EnumerableExample enumerableExample = new EnumerableExample();
-enumerableExample.EnumerableMethod();
+//EnumerableExample enumerableExample = new EnumerableExample();
+//enumerableExample.EnumerableMethod();
 
-QurableExample qurableExample = new QurableExample();
-qurableExample.Example();
+//QurableExample qurableExample = new QurableExample();
+//qurableExample.Example();
