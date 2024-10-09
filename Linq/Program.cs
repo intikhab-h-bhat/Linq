@@ -6,8 +6,8 @@ using Linq.Select_SelectMany;
 
 Select_SelectMany selectDemo=new Select_SelectMany();
 //selectDemo.SelectMultipleProperties();
-selectDemo.SelectAnonymousObj();
-
+//selectDemo.SelectAnonymousObj();
+selectDemo.RemoveDuplicacy();
 //selectDemo.SelectMethod();
 
 //selectDemo.SelectSingleProperty();

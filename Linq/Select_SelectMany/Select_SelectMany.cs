@@ -107,8 +107,47 @@ namespace Linq.Select_SelectMany
             }
 
 
+        }
+
+
+        //selectMany
+        public void SelectManyMethod()
+
+        {
+            IEnumerable<string> stuInfo=(from s in StudentInfo.GetStudents()
+                                      from prog in s.ProgrammingLang                                     
+                                      select prog).ToList();
+
+            foreach(var stu in stuInfo)
+            {
+                Console.WriteLine(stu);
+            }
+
+            List<string> methodSyntext = StudentInfo.GetStudents().SelectMany(s => s.ProgrammingLang).ToList();
+
+            foreach (var stu in methodSyntext)
+            {
+                Console.WriteLine(stu);
+            }
 
         }
+
+        //Remove duplicacy
+        public void RemoveDuplicacy()
+        {
+            List<string> rmDupProg= StudentInfo.GetStudents().SelectMany(s=>s.ProgrammingLang)
+                .Distinct().ToList();
+
+            IEnumerable<string> rmDupPrgQueryType = (from s in StudentInfo.GetStudents()
+                                                     from p in s.ProgrammingLang
+                                                     select p).Distinct().ToList();
+            foreach(var pr in rmDupPrgQueryType)
+            {
+                Console.WriteLine(pr);
+            }
+        }
+
+
     }
     public class EmployeeInfo
     {
@@ -131,6 +170,26 @@ namespace Linq.Select_SelectMany
             new EmployeeInfo{Id=3,Name="abcd",Address="Kanipora",City="Srinagar",Email="dez@gmail.com",Phone=986567890,Salary=15000},
             };
             return employeeInfos;
+        }
+    }
+
+
+    public class StudentInfo
+    {
+        public int Id { get; set; }
+        public string StuName { get; set; }
+        public string StuAddress { get; set;}
+        public List<string> ProgrammingLang { get; set;}
+
+
+
+        public static List<StudentInfo> GetStudents()
+        {
+            List<StudentInfo> stuList = new List<StudentInfo>() {
+                new StudentInfo(){Id=1,StuName="Ahmad",ProgrammingLang=new List<string> {"C#","Python","JavaScript"} },
+                new StudentInfo(){Id=2,StuName="Imad",ProgrammingLang=new List<string> {"CSS","HTML","JavaScript"} },
+            };
+            return stuList;
         }
     }
 }
