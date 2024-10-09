@@ -1,13 +1,18 @@
 ﻿
 using Linq.IenumIqura;
 using Linq.Select_SelectMany;
+using Linq.WhereFilter;
 
 
 
-Select_SelectMany selectDemo=new Select_SelectMany();
+WherFilter wherFilter = new WherFilter();
+wherFilter.WhereFilterDemo();
+
+
+//Select_SelectMany selectDemo=new Select_SelectMany();
 //selectDemo.SelectMultipleProperties();
 //selectDemo.SelectAnonymousObj();
-selectDemo.RemoveDuplicacy();
+//selectDemo.RemoveDuplicacy();
 //selectDemo.SelectMethod();
 
 //selectDemo.SelectSingleProperty();
