@@ -16,6 +16,7 @@ namespace Linq.ConactAndUnion
             int[] intArray2 = { 4, 5, 6, 7, 8, 9, 10 };
 
             IEnumerable<int> qm = intArray1.Concat(intArray2);
+            //IEnumerable<int> qm = intArray1.Concat(intArray2).OrderByDescending(num => num);
             IEnumerable<int> qs = (from num in intArray1 select num).Concat(intArray2);
 
             //IEnumerable<int> qm = intArray1.Union(intArray2);
