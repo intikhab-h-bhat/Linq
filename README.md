@@ -6,5 +6,8 @@
 * Select and selectMany
 * Intersect
 * Except
-* Union
+* Concat and Union
+* Distinct
+* OrderBY
+* OrderByDescendig
 * 
