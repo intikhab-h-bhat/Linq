@@ -5,4 +5,6 @@
 * Mixed Syntax
 * Select and selectMany
 * Intersect
+* Except
+* Union
 * 
