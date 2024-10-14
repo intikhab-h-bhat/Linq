@@ -1,5 +1,6 @@
 ﻿
 using Linq.ConactAndUnion;
+using Linq.ContainsDemo;
 using Linq.DistinctDemo;
 using Linq.ExceptMethod;
 using Linq.IenumIqura;
@@ -10,5 +11,5 @@ using Linq.ThenByDemo;
 using Linq.WhereFilter;
 
 
-ThenByTest thenByTest = new ThenByTest();
-thenByTest.UsingThenByMultipleValues();
+ContainesMethod containesMethod = new ContainesMethod();
+containesMethod.ContainsWithComplexType();
