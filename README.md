@@ -10,4 +10,6 @@
 * Distinct
 * OrderBY
 * OrderByDescendig
-* 
+* ThenBy
+* ThenByDescending
+* Contains
