@@ -1,4 +1,5 @@
 ﻿
+using Linq.AggregateMethod;
 using Linq.ConactAndUnion;
 using Linq.ContainsDemo;
 using Linq.DistinctDemo;
@@ -11,5 +12,5 @@ using Linq.ThenByDemo;
 using Linq.WhereFilter;
 
 
-ContainesMethod containesMethod = new ContainesMethod();
-containesMethod.ContainsWithComplexType();
+AggregateDemo agMethod = new AggregateDemo();
+agMethod.AggregateWithComplexType();

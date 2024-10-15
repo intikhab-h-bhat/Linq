@@ -37,24 +37,26 @@ namespace Linq.ContainsDemo
             List<EmpDetails> empDetailsList = new List<EmpDetails>();
 
             var emp1 = new EmpDetails() { Id = 1, FirstName = "Masarat", LastName = "Abc", Salary = 10000 };
-               new EmpDetails() {Id=2, FirstName="Javaid",LastName="Ahamed",Salary=12000},
-               new EmpDetails() {Id=3,FirstName="Adil",LastName="Dar",Salary=11000},
-               new EmpDetails() {Id=6,FirstName="Haseena",LastName="Akhtar",Salary=6500},
-               new EmpDetails() {Id=4,FirstName="Iqra",LastName="Tariq",Salary=6000},
-               new EmpDetails() {Id=5,FirstName="Bisma",LastName="Bashir",Salary=7000},
+            var emp2 = new EmpDetails() { Id = 2, FirstName = "Javaid", LastName = "Ahamed", Salary = 12000 };
+            var emp3 = new EmpDetails() { Id = 3, FirstName = "Adil", LastName = "Dar", Salary = 11000 };
+            var emp4 = new EmpDetails() { Id = 6, FirstName = "Haseena", LastName = "Akhtar", Salary = 6500 };
+            var emp5 = new EmpDetails() { Id = 4, FirstName = "Iqra", LastName = "Tariq", Salary = 6000 };
+            var emp6 = new EmpDetails() { Id = 5, FirstName = "Bisma", LastName = "Bashir", Salary = 7000 };
 
+            empDetailsList.Add(emp1);
+            empDetailsList.Add(emp2);
+            empDetailsList.Add(emp3);
+            empDetailsList.Add(emp4);
 
-        
-
-            var qm=empDetailsList.Select(x=> x.FirstName).Contains("Masarat") ;
-            var qs= from i in  empDetailsList where i.FirstName.Contains("Masarat") select i ;
+            //var qm = empDetailsList.Contains(emp1);
+            var qs= (from emp in empDetailsList select emp).Contains(emp6);
             Console.WriteLine(qs);
 
-            //foreach (var emp in empDetailsList) {
+            //var qm=empDetailsList.Select(x=> x.FirstName).Contains("Masarat") ;
+            //var qs= from i in  empDetailsList where i.FirstName.Contains("Masarat") select i ;
+            //Console.WriteLine(qs);
 
-            //    Console.WriteLine($"{emp.Id},{emp.FirstName},{emp.Salary}");
-            
-            //}
+           
 
            
 
