@@ -13,3 +13,5 @@
 * ThenBy
 * ThenByDescending
 * Contains
+* Aggegrate methods (Sum,Max,Min,count)
+* All and Any method
