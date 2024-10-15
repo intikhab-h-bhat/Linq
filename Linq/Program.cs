@@ -1,5 +1,6 @@
 ﻿
 using Linq.AggregateMethod;
+using Linq.All_AllAny;
 using Linq.ConactAndUnion;
 using Linq.ContainsDemo;
 using Linq.DistinctDemo;
@@ -12,5 +13,5 @@ using Linq.ThenByDemo;
 using Linq.WhereFilter;
 
 
-AggregateDemo agMethod = new AggregateDemo();
-agMethod.AggregateWithComplexType();
+AllAnyDemo allAny = new AllAnyDemo ();
+allAny.AllMethod();

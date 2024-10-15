@@ -59,9 +59,12 @@ namespace Linq.AggregateMethod
             //var qs= (from i in emp select i).Sum(i=> i.Salary);
 
             //var qm= emp.Count();
-           
+            //var qs= (from i in emp select i).Average(x=>x.Salary);
+            //var qm = emp.Average(x=>x.Salary);
+            var qm= emp.Where(x=>x.Salary> 12000).Average(x=>x.Salary);
 
-            Console.WriteLine(qs);
+
+            Console.WriteLine(qm);
 
 
         }
