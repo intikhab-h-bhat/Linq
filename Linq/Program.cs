@@ -14,4 +14,4 @@ using Linq.WhereFilter;
 
 
 AllAnyDemo allAny = new AllAnyDemo ();
-allAny.AllMethod();
+allAny.WithComplexType();
