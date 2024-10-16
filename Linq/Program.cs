@@ -8,10 +8,13 @@ using Linq.ExceptMethod;
 using Linq.IenumIqura;
 using Linq.Intersect;
 using Linq.OrderByDemo;
+using Linq.ReverseMethod;
 using Linq.Select_SelectMany;
 using Linq.ThenByDemo;
 using Linq.WhereFilter;
 
 
-AllAnyDemo allAny = new AllAnyDemo ();
-allAny.WithComplexType();
+ReverseDemo rev = new ReverseDemo ();
+//rev.Example();
+//rev.WithString();
+rev.IenumerableOnCollection();

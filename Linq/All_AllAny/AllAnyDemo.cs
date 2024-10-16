@@ -30,20 +30,26 @@ namespace Linq.All_AllAny
             //var qm = StudentMarks.GetStudent().Where(s => s.Subject.All(m => m.Marks > 75)).ToList();
             //var qs = (from i in StudentMarks.GetStudent() where i.Subject.All(x => x.Marks > 75) select i).ToList();
 
-            // var qm = StudentMarks.GetStudent().Where(s=> s.Subject.Any(x=>x.Marks>80));
+             var qm = StudentMarks.GetStudent().Where(s=> s.Subject.Any(x=>x.Marks>80));
 
-            var qm = StudentMarks.GetStudent().Select(i => i.Subject.Sum(x => x.Marks)).ToList();
+            //var qm = StudentMarks.GetStudent().Select(i => i.Subject.Sum(x => x.Marks)).ToList();
 
-            //foreach(var s in qm)
-            //{
-            //    Console.WriteLine(s.Name);
+            foreach (var s in qm)
+            {
+                Console.WriteLine(s.Name);
+
+                foreach(var sub in s.Subject)
+                {
+
+                    Console.WriteLine($"{sub.SubName},  {sub.Marks}");
+                }
+            }
+
+            //foreach(var x in qm) {
+            //   Console.WriteLine($"{x}");
             //}
 
-            foreach(var x in qm) {
-               Console.WriteLine($"{x}");
-            }
-            
-          
+
         }
        
 
