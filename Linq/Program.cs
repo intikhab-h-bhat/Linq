@@ -6,6 +6,7 @@ using Linq.ContainsDemo;
 using Linq.DistinctDemo;
 using Linq.ElementAt;
 using Linq.ExceptMethod;
+using Linq.FirstAndFirstOrDefault;
 using Linq.IenumIqura;
 using Linq.Intersect;
 using Linq.OrderByDemo;
@@ -15,5 +16,5 @@ using Linq.ThenByDemo;
 using Linq.WhereFilter;
 
 
-ElementAtMethod elAt= new ElementAtMethod();
-elAt.ElementAtOrDefaultMethod();
+FirstAndFirstDefaultDemo firstDefaultDemo = new FirstAndFirstDefaultDemo();
+firstDefaultDemo.FirstWithNotReturningAnyThing();
