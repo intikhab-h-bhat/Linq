@@ -4,6 +4,7 @@ using Linq.All_AllAny;
 using Linq.ConactAndUnion;
 using Linq.ContainsDemo;
 using Linq.DistinctDemo;
+using Linq.ElementAt;
 using Linq.ExceptMethod;
 using Linq.IenumIqura;
 using Linq.Intersect;
@@ -14,7 +15,5 @@ using Linq.ThenByDemo;
 using Linq.WhereFilter;
 
 
-ReverseDemo rev = new ReverseDemo ();
-//rev.Example();
-//rev.WithString();
-rev.IenumerableOnCollection();
+ElementAtMethod elAt= new ElementAtMethod();
+elAt.ElementAtOrDefaultMethod();
