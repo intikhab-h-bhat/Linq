@@ -81,6 +81,22 @@ namespace Linq.TakeAndTakeWhile
 
         }
 
+        public void TakewhileWithIndexParam()
+        {
+            List<string> strList = new List<string>()
+            {
+                "Apple","Banana","Orange","tip"
+            };
+
+            var qm = strList.TakeWhile((fruits,index)=> fruits.Length > index).ToList();
+
+
+            foreach(var item in qm)
+            {
+                Console.WriteLine(item);
+            }
+        }
+
        
     }
 }

@@ -13,9 +13,10 @@ using Linq.OrderByDemo;
 using Linq.ReverseMethod;
 using Linq.Select_SelectMany;
 using Linq.SingleAndSingleDefault;
+using Linq.SkipMethod;
 using Linq.TakeAndTakeWhile;
 using Linq.ThenByDemo;
 using Linq.WhereFilter;
 
-TakeAndTakeWhileDemo td= new TakeAndTakeWhileDemo();
-td.TakeWithCompleType();
+SkipAndSkipWhile sk= new SkipAndSkipWhile();
+sk.SkipExample();
