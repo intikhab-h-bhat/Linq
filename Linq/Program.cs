@@ -10,6 +10,7 @@ using Linq.FirstAndFirstOrDefault;
 using Linq.IenumIqura;
 using Linq.Intersect;
 using Linq.OrderByDemo;
+using Linq.RangeMethod;
 using Linq.ReverseMethod;
 using Linq.Select_SelectMany;
 using Linq.SingleAndSingleDefault;
@@ -18,5 +19,6 @@ using Linq.TakeAndTakeWhile;
 using Linq.ThenByDemo;
 using Linq.WhereFilter;
 
-SkipAndSkipWhile sk= new SkipAndSkipWhile();
-sk.SkipExample();
+
+RangeDemo rg= new RangeDemo();
+rg.RangeWithWhere();
