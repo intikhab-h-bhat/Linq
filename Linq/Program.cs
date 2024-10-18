@@ -12,9 +12,10 @@ using Linq.Intersect;
 using Linq.OrderByDemo;
 using Linq.ReverseMethod;
 using Linq.Select_SelectMany;
+using Linq.SingleAndSingleDefault;
 using Linq.ThenByDemo;
 using Linq.WhereFilter;
 
 
-FirstAndFirstDefaultDemo firstDefaultDemo = new FirstAndFirstDefaultDemo();
-firstDefaultDemo.FirstWithNotReturningAnyThing();
+SingleDemo singleDemo = new SingleDemo();
+singleDemo.SingleWithMoreThanOneElement();
