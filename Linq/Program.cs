@@ -13,9 +13,9 @@ using Linq.OrderByDemo;
 using Linq.ReverseMethod;
 using Linq.Select_SelectMany;
 using Linq.SingleAndSingleDefault;
+using Linq.TakeAndTakeWhile;
 using Linq.ThenByDemo;
 using Linq.WhereFilter;
 
-
-SingleDemo singleDemo = new SingleDemo();
-singleDemo.SingleWithMoreThanOneElement();
+TakeAndTakeWhileDemo td= new TakeAndTakeWhileDemo();
+td.TakeWithCompleType();
