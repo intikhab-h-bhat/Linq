@@ -1,4 +1,6 @@
-﻿using System;
+﻿using Linq.IenumIqura;
+using Linq.Select_SelectMany;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -68,6 +70,43 @@ namespace Linq.DefaultIfEmptyMethod
             {
                 Console.WriteLine(i);
             }
+
+        }
+
+        public void Eaxmple5()
+        {
+
+            List<EmployeeInfo> emp = EmployeeInfo.GetEmployees();
+
+            EmployeeInfo emp1= new EmployeeInfo()
+            {
+                Id=4,Name="XYZ",Email="xyz@gmail.com",
+                City="sdaksd",Address="alasdasd",Phone=12312313,Salary=40000
+            };
+
+
+            IEnumerable<EmployeeInfo> qm = emp.DefaultIfEmpty();
+            var qmWithValue = emp.DefaultIfEmpty(emp1);
+            var qs= (from i in emp select i).DefaultIfEmpty();
+
+            //foreach (var i in qmWithValue)
+            //{
+
+            //    Console.WriteLine($"{i.Id}, {i.Name}, {i.Email}, {i.City}");
+            //}
+
+
+            List<EmployeeInfo> empList1 = new List<EmployeeInfo>();
+
+            var blankEmp= empList1.DefaultIfEmpty(emp1 );
+
+            foreach (var i in blankEmp)
+            {
+
+                Console.WriteLine($"{i.Id}, {i.Name}, {i.Email}, {i.City}");
+            }
+
+
 
         }
 
