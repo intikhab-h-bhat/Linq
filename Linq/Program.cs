@@ -5,6 +5,7 @@ using Linq.ConactAndUnion;
 using Linq.ContainsDemo;
 using Linq.DistinctDemo;
 using Linq.ElementAt;
+using Linq.EmptyMethod;
 using Linq.ExceptMethod;
 using Linq.FirstAndFirstOrDefault;
 using Linq.IenumIqura;
@@ -21,5 +22,5 @@ using Linq.ThenByDemo;
 using Linq.WhereFilter;
 
 
-RepeatDemo rd= new RepeatDemo();
-rd.RepratExample();
+EmptyDemo  ed= new EmptyDemo();
+ed.Example2();
