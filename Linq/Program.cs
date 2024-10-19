@@ -11,6 +11,7 @@ using Linq.IenumIqura;
 using Linq.Intersect;
 using Linq.OrderByDemo;
 using Linq.RangeMethod;
+using Linq.RepeatMethod;
 using Linq.ReverseMethod;
 using Linq.Select_SelectMany;
 using Linq.SingleAndSingleDefault;
@@ -20,5 +21,5 @@ using Linq.ThenByDemo;
 using Linq.WhereFilter;
 
 
-RangeDemo rg= new RangeDemo();
-rg.RangeWithWhere();
+RepeatDemo rd= new RepeatDemo();
+rd.RepratExample();
