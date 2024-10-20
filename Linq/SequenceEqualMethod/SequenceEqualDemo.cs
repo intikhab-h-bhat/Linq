@@ -2,6 +2,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
+using System.Net.Quic;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -67,22 +68,55 @@ namespace Linq.SequenceEqualMethod
                 "Delhi","srinagar","Jammu"
             };
 
-            //var cityClass = CityList.GetCityList().ToList();
+          
 
             var qm=strCity1.OrderBy(x=> x).SequenceEqual(strCity.OrderBy(x=>x),StringComparer.OrdinalIgnoreCase);
                 
 
             Console.WriteLine(qm);
 
-          
+
+            var cityClass = CityList.GetCityList().ToList();
+
+            var citySeq = cityClass.Select(x=>x.Name).OrderBy(x => x).SequenceEqual(strCity.OrderBy(x=>x),StringComparer.OrdinalIgnoreCase);
+
+           Console.WriteLine($"This is with class {citySeq}");
+            
+            foreach (var city in cityClass)
+            {
+                Console.WriteLine(city.Name);
+            }
+
+
 
 
         }
 
+        public void Example4()
+        {
+            List<CityList> list1=CityList.GetCityList();
+            List<CityList>list2 = CityList.GetCityList2();
+                        
+             bool qs = (from i in list1 select i).SequenceEqual(list2);
+            // this gives false the values are same but reference are not 
+            Console.WriteLine(qs);
+
+            // using anonymious object
+            bool qm = list1.Select(x=> new { x.Id, x.Name })
+                .SequenceEqual(list2.Select(x=> new { x.Id,x.Name}));
+
+            //This will be true
+            Console.WriteLine(qm);
+            
+        }
+
+
+
+
     }
     public class CityList
     {
-        public int Id { get; set; }
+         public int Id { get; set; }
         public string Name { get; set; }
 
 
@@ -90,12 +124,28 @@ namespace Linq.SequenceEqualMethod
         {
             List<CityList> cityList = new List<CityList>()
             {
-                new CityList(){Id = 1,Name="Delhi"},
-                new CityList(){Id = 2,Name="Srinagar"},
-                new CityList(){Id = 3,Name="Jammu"},
-            };
+                new CityList(){Id=1,Name="Delhi"},
+                new CityList(){Id=2,Name="Srinagar"},
+                new CityList(){Id=3,Name="Jammu"},
+            };            
+
             return cityList;
 
+        }
+
+        public static List<CityList> GetCityList2()
+        {
+            List<CityList> cityList = new List<CityList>();
+
+            CityList city1 = new CityList { Id = 1, Name = "Delhi" };
+            CityList city2 = new CityList { Id = 2, Name = "Srinagar" };
+            CityList city3 = new CityList { Id = 3, Name = "Jammu" };
+
+            cityList.Add(city1);
+            cityList.Add(city2);
+            cityList.Add(city3);
+
+            return cityList;
         }
             
     }

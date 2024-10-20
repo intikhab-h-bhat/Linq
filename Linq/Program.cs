@@ -26,4 +26,4 @@ using Linq.WhereFilter;
 
 
 SequenceEqualDemo seq= new SequenceEqualDemo();
-seq.Example3();
+seq.Example4();
