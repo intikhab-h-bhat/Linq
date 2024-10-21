@@ -5,6 +5,7 @@ using Linq.AppendMethod;
 using Linq.ConactAndUnion;
 using Linq.ContainsDemo;
 using Linq.DefaultIfEmptyMethod;
+using Linq.DictoneryMethod;
 using Linq.DistinctDemo;
 using Linq.ElementAt;
 using Linq.EmptyMethod;
@@ -25,5 +26,5 @@ using Linq.ThenByDemo;
 using Linq.WhereFilter;
 
 
-SequenceEqualDemo seq= new SequenceEqualDemo();
-seq.Example4();
+DictoneryDemo dd= new DictoneryDemo();
+dd.Example2();
