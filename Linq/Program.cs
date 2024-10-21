@@ -13,6 +13,7 @@ using Linq.ExceptMethod;
 using Linq.FirstAndFirstOrDefault;
 using Linq.IenumIqura;
 using Linq.Intersect;
+using Linq.JoinOperator;
 using Linq.OrderByDemo;
 using Linq.RangeMethod;
 using Linq.RepeatMethod;
@@ -26,5 +27,5 @@ using Linq.ThenByDemo;
 using Linq.WhereFilter;
 
 
-DictoneryDemo dd= new DictoneryDemo();
-dd.Example2();
+JoinDemocs dd= new JoinDemocs();
+dd.Examle3();
