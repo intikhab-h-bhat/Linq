@@ -28,4 +28,4 @@ using Linq.WhereFilter;
 
 
 JoinDemocs dd= new JoinDemocs();
-dd.Examle3();
+dd.Example4();
