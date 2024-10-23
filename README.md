@@ -19,3 +19,6 @@
 * ElementAt
 * First and FirstDefault
 * Last and LastDefault
+* Join
+* GroupJoin
+* Left join and Right Join
