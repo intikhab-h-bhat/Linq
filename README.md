@@ -17,8 +17,10 @@
 * All and Any method
 * Reverse Method
 * ElementAt
+* SequenceMethod
 * First and FirstDefault
 * Last and LastDefault
 * Join
 * GroupJoin
 * Left join and Right Join
+* Full Outer Join
